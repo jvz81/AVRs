@@ -1,0 +1,5 @@
+
+AVRASM ver. 2.1.42  c:\00000000.asm Sat Dec 01 14:04:37 2012
+
+[builtin](2): error: Cannot find include file: m8def.inc
+c:\00000000.asm(0): '[builtin]' included form here

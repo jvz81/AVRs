@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<PROJECT DESCRIPTION="">
+ <KEYWORDS/>
+ <FILES>
+  <FILE GROUP="Design Files" NAME="cko_proteus.DSN"/>
+  <FILE GROUP="Source Files" NAME="VSM_Parpadea.asm"/>
+ </FILES>
+ <CONFIGURATION TARGET="Debug" COMPILER="AVRASM (Proteus)" NAME="Debug">
+  <CONTROLLER FAMILY="AVR" CLOCK="1MHz" TYPE="ATmega8"/>
+  <FILE TOOL="ASM" NAME="Debug/Debug.hex">
+   <FILE NAME="VSM_Parpadea.asm"/>
+  </FILE>
+  <FILE NAME="cko_proteus.DSN"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="-f" VALUE="I"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="-i" VALUE="&quot;%COMPILER_DIR_DOS%\appnotes\m8def.inc&quot;"/>
+ </CONFIGURATION>
+ <CONFIGURATION TARGET="Release" COMPILER="AVRASM (Proteus)" NAME="Release">
+  <CONTROLLER FAMILY="AVR" CLOCK="1000000" TYPE="ATmega8"/>
+  <FILE TOOL="ASM" NAME="Release/Release.hex">
+   <FILE NAME="VSM_Parpadea.asm"/>
+  </FILE>
+  <FILE NAME="cko_proteus.DSN"/>
+  <OPTION TOOL="ASM" NAME="-f" VALUE="I"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="-i" VALUE="&quot;%COMPILER_DIR_DOS%\appnotes\m8def.inc&quot;"/>
+ </CONFIGURATION>
+</PROJECT>
